@@ -20,6 +20,59 @@ def similar(a, b):
     return SequenceMatcher(None, a.lower(), b.lower()).ratio()
 
 
+def process_dish_entry_json(dish_entry, food_data):
+    dish_name = dish_entry["dish"]
+    issues = dish_entry.get("issues", [])
+    logs = []
+
+    # Extract ingredients
+    ingredients = get_ingredients_from_dish(dish_name, food_data)
+    logs.append(f"Extracted ingredients using Gemini: {ingredients}")
+
+    # Nutrition matching
+    matched = match_ingredients_to_nutrition(ingredients, food_data)
+    unmatched = [i for i in ingredients if not any(m['ingredient'] == i for m in matched)]
+    for u in unmatched:
+        logs.append(f"⚠️ No nutritional match found for '{u}' - likely missing in DB or spelling variation.")
+
+    # Category classification
+    category, weight = classify_dish_category(dish_name)
+    if category == "Unknown":
+        logs.append(f"⚠️ Could not classify dish, defaulted to 100g serving.")
+
+    # Add any issues from the JSON
+    for issue in issues:
+        logs.append(f"⚠️ Issue from input: {issue}")
+
+    # Nutrition calculation
+    totals = {
+        "energy_kj": 0, "energy_kcal": 0, "carb_g": 0, "protein_g": 0,
+        "fat_g": 0, "freesugar_g": 0, "fibre_g": 0
+    }
+    for entry in matched:
+        try:
+            totals["energy_kj"] += float(entry.get("energy_kj", 0))
+            totals["energy_kcal"] += float(entry.get("energy_kcal", 0))
+            totals["carb_g"] += float(entry.get("carb_g", 0))
+            totals["protein_g"] += float(entry.get("protein_g", 0))
+            totals["fat_g"] += float(entry.get("fat_g", 0))
+            totals["freesugar_g"] += float(entry.get("freesugar_g", 0))
+            totals["fibre_g"] += float(entry.get("fibre_g", 0))
+        except Exception:
+            continue
+
+    scale_factor = weight / 100
+    scaled_nutrition = {k: round(v * scale_factor, 2) for k, v in totals.items()}
+
+    return {
+        "dish": dish_name,
+        "ingredients_extracted": ingredients,
+        "logs": logs,
+        "category": category,
+        "serving_weight_g": weight,
+        "nutrition_per_serving": scaled_nutrition
+    }
+
 
 def convert_to_grams(quantity, unit, ingredient):
     DENSITY_MAP = {

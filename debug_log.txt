@@ -1,0 +1,137 @@
+🍽️ Processing Dish: Jeera Aloo (mild fried)
+
+📝 Assumptions & Logs:
+- Extracted ingredients using Gemini: ['Potato, brown skin, big (Solanum tuberosum)', 'Cumin seeds (Cuminum cyminum)', 'Cooking oil (groundnut, gingerly, palmolein, mustard, coconut, etc)', 'Onion, big (Allium cepa)', 'Salt']
+
+🍽️ Processing Dish: Gobhi Sabzi
+
+📝 Assumptions & Logs:
+- Extracted ingredients using Gemini: ['Cauliflower (Brassica oleracea var. botrytis)', 'Onion, big (Allium cepa)', 'Tomato, ripe, local (Solanum lycopersicum)']
+
+🍽️ Processing Dish: Chana masala
+
+📝 Assumptions & Logs:
+- Extracted ingredients using Gemini: ['Bengal gram, whole (Cicer arietinum)', 'Onion, big (Allium cepa)', 'Tomato, ripe, local (Solanum lycopersicum)', 'Garlic, big clove (Allium sativum)', 'Ginger, fresh (Zingiber officinale)']
+
+🍽️ Processing Dish: Paneer Curry with capsicum
+
+📝 Assumptions & Logs:
+- Extracted ingredients using Gemini: ['Paneer', 'Capsicum, green (Capsicum annuum)', 'Onion, big (Allium cepa)', 'Tomato, ripe, local (Solanum lycopersicum)', 'Garlic, big clove (Allium sativum)', 'Ginger, fresh (Zingiber officinale)', 'Cooking oil (groundnut, gingerly, palmolein, mustard, coconut, etc)']
+
+🍽️ Processing Dish: Mixed veg
+⚠️ No match found for ingredient: Given that "Mixed Veg" is a very broad term and can include a wide variety of vegetables,  I will provide a list off common vegetables used in an Indian Mixed Veg preparation.  The exact ingredients will vary depending on regional preferences and the chef's creativity. This list is a suggestion of what might be found in a typical Indian pantry, aiming for variety and nutritional balance.  Remember, this is NOT an exhaustive list, but representative of what could be considered.
+
+📝 Assumptions & Logs:
+- Extracted ingredients using Gemini: ['Given that "Mixed Veg" is a very broad term and can include a wide variety of vegetables,  I will provide a list of common vegetables used in an Indian Mixed Veg preparation.  The exact ingredients will vary depending on regional preferences and the chef\'s creativity. This list is a suggestion of what might be found in a typical Indian pantry, aiming for variety and nutritional balance.  Remember, this is NOT an exhaustive list, but representative of what could be considered.', 'Potato, brown skin, big (Solanum tuberosum)', 'Carrot, orange (Daucus carota)', 'Cauliflower (Brassica oleracea var. botrytis)', 'Peas, fresh (Pisum sativum)', 'Green beans, country (Phaseolus vulgaris)', 'Brinjal - all varieties (Solanum melongena)']
+- ⚠️ No nutritional match found for 'Given that "Mixed Veg" is a very broad term and can include a wide variety of vegetables,  I will provide a listt of common vegetables used in an Indian Mixed Veg preparation.  The exact ingredients will vary depending on regional preferences and the chef's creativity. This list is a suggestion of what might be found in a typical Indian pantry, aiming for variety and nutritional balance.  Remember, this is NOT an exhaustive list, but representative of what could be considered.' — likely missing in DB or spelling variation.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Enter dish name: biryani
+
+🔍 Finding ingredients for: biryani
+✅ Extracted Ingredients: ['Rice, raw, milled (Oryza sativa)', 'Chicken, poultry, breast, skinless', 'Onion, big (Allium cepa)']
+
+📊 Nutrition Breakdown (per matched ingredient):
+{
+  "ingredient": "Rice, raw, milled (Oryza sativa)",
+  "matched_to": "Rice, raw, milled (Oryza sativa )",
+  "match_confidence": 0.9846153846153847,
+  "food_name": "Rice, raw, milled (Oryza sativa )",
+  "energy_kj": "1491",
+  "energy_kcal": "356.35",
+  "carb_g": "78.24",
+  "protein_g": "7.94",
+  "fat_g": "0.52",
+  "freesugar_g": "0.69",
+  "fibre_g": "2.81"
+}
+{
+  "ingredient": "Chicken, poultry, breast, skinless",
+  "matched_to": "Chicken, poultry, breast, skinless",
+  "match_confidence": 1.0,
+  "food_name": "Chicken, poultry, breast, skinless",
+  "energy_kj": "704",
+  "energy_kcal": "168.26",
+  "carb_g": "0",
+  "protein_g": "21.81",
+  "fat_g": "9",
+  "freesugar_g": "0",
+  "fibre_g": "0"
+}
+{
+  "ingredient": "Onion, big (Allium cepa)",
+  "matched_to": "Onion, big (Allium cepa)",
+  "match_confidence": 1.0,
+  "food_name": "Onion, big (Allium cepa)",
+  "energy_kj": "201",
+  "energy_kcal": "48.04",
+  "carb_g": "9.56",
+  "protein_g": "1.5",
+  "fat_g": "0.24",
+  "freesugar_g": "5.88",
+  "fibre_g": "2.45"
+}
+
+🍽️ Identified Dish Category: Wet Rice Item (150g per serving)
+
+📊 Nutrition Breakdown per ingredient (100g reference):
+{
+  "ingredient": "Rice, raw, milled (Oryza sativa)",
+  "matched_to": "Rice, raw, milled (Oryza sativa )",
+  "match_confidence": 0.9846153846153847,
+  "food_name": "Rice, raw, milled (Oryza sativa )",
+  "energy_kj": "1491",
+  "energy_kcal": "356.35",
+  "carb_g": "78.24",
+  "protein_g": "7.94",
+  "fat_g": "0.52",
+  "freesugar_g": "0.69",
+  "fibre_g": "2.81"
+}
+{
+  "ingredient": "Chicken, poultry, breast, skinless",
+  "matched_to": "Chicken, poultry, breast, skinless",
+  "match_confidence": 1.0,
+  "food_name": "Chicken, poultry, breast, skinless",
+  "energy_kj": "704",
+  "energy_kcal": "168.26",
+  "carb_g": "0",
+  "protein_g": "21.81",
+  "fat_g": "9",
+  "freesugar_g": "0",
+  "fibre_g": "0"
+}
+{
+  "ingredient": "Onion, big (Allium cepa)",
+  "matched_to": "Onion, big (Allium cepa)",
+  "match_confidence": 1.0,
+  "food_name": "Onion, big (Allium cepa)",
+  "energy_kj": "201",
+  "energy_kcal": "48.04",
+  "carb_g": "9.56",
+  "protein_g": "1.5",
+  "fat_g": "0.24",
+  "freesugar_g": "5.88",
+  "fibre_g": "2.45"
+}
+
+🥄 Estimated Nutrition per 1 serving (1 medium katori (~150g)):
+| Nutrient        | Amount             |
+|----------------|--------------------|
+| 🔥 Energy       | 858.97 kcal (3594.00 kJ) |
+| 🍚 Carbohydrates | 131.70 g            |
+| 🍗 Protein       | 46.88 g            |
+| 🧈 Fat           | 14.64 g            |
+| 🍬 Free Sugar    | 9.86 g            |
+| 🌾 Fibre         | 7.89 g            |

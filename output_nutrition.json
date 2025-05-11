@@ -1,0 +1,135 @@
+[
+  {
+    "dish": "Jeera Aloo (mild fried)",
+    "ingredients_extracted": [
+      "Potato, brown skin, big (Solanum tuberosum)",
+      "Cumin seeds (Cuminum cyminum)",
+      "Cooking oil (groundnut, gingerly, palmolein, mustard, coconut, etc)",
+      "Onion, big (Allium cepa)",
+      "Salt"
+    ],
+    "logs": [
+      "Extracted ingredients using Gemini: ['Potato, brown skin, big (Solanum tuberosum)', 'Cumin seeds (Cuminum cyminum)', 'Cooking oil (groundnut, gingerly, palmolein, mustard, coconut, etc)', 'Onion, big (Allium cepa)', 'Salt']",
+      "⚠️ Issue from input: ingredient synonym",
+      "⚠️ Issue from input: quantity missing"
+    ],
+    "category": "Veg Fry",
+    "serving_weight_g": 100,
+    "nutrition_per_serving": {
+      "energy_kj": 5532.6,
+      "energy_kcal": 1322.32,
+      "carb_g": 47.07,
+      "protein_g": 16.95,
+      "fat_g": 117.11,
+      "freesugar_g": 7.58,
+      "fibre_g": 34.51
+    }
+  },
+  {
+    "dish": "Gobhi Sabzi",
+    "ingredients_extracted": [
+      "Cauliflower (Brassica oleracea var. botrytis)",
+      "Onion, big (Allium cepa)",
+      "Tomato, ripe, local (Solanum lycopersicum)"
+    ],
+    "logs": [
+      "Extracted ingredients using Gemini: ['Cauliflower (Brassica oleracea var. botrytis)', 'Onion, big (Allium cepa)', 'Tomato, ripe, local (Solanum lycopersicum)']",
+      "⚠️ Issue from input: ambiguous dish type"
+    ],
+    "category": "Veg Gravy",
+    "serving_weight_g": 150,
+    "nutrition_per_serving": {
+      "energy_kj": 568.5,
+      "energy_kcal": 135.87,
+      "carb_g": 21.45,
+      "protein_g": 6.82,
+      "fat_g": 1.72,
+      "freesugar_g": 11.54,
+      "fibre_g": 11.89
+    }
+  },
+  {
+    "dish": "Chana masala",
+    "ingredients_extracted": [
+      "Bengal gram, whole (Cicer arietinum)",
+      "Onion, big (Allium cepa)",
+      "Tomato, ripe, local (Solanum lycopersicum)",
+      "Garlic, big clove (Allium sativum)",
+      "Ginger, fresh (Zingiber officinale)"
+    ],
+    "logs": [
+      "Extracted ingredients using Gemini: ['Bengal gram, whole (Cicer arietinum)', 'Onion, big (Allium cepa)', 'Tomato, ripe, local (Solanum lycopersicum)', 'Garlic, big clove (Allium sativum)', 'Ginger, fresh (Zingiber officinale)']",
+      "⚠️ Issue from input: missing ingredient in nutrition DB"
+    ],
+    "category": "Veg Gravy",
+    "serving_weight_g": 150,
+    "nutrition_per_serving": {
+      "energy_kj": 3348.0,
+      "energy_kcal": 800.18,
+      "carb_g": 124.09,
+      "protein_g": 45.46,
+      "fat_g": 10.25,
+      "freesugar_g": 23.23,
+      "fibre_g": 60.03
+    }
+  },
+  {
+    "dish": "Paneer Curry with capsicum",
+    "ingredients_extracted": [
+      "Paneer",
+      "Capsicum, green (Capsicum annuum)",
+      "Onion, big (Allium cepa)",
+      "Tomato, ripe, local (Solanum lycopersicum)",
+      "Ginger, fresh (Zingiber officinale)",
+      "Garlic, big clove (Allium sativum)",
+      "Cooking oil (groundnut, gingerly, palmolein, mustard, coconut, etc)"
+    ],
+    "logs": [
+      "Extracted ingredients using Gemini: ['Paneer', 'Capsicum, green (Capsicum annuum)', 'Onion, big (Allium cepa)', 'Tomato, ripe, local (Solanum lycopersicum)', 'Ginger, fresh (Zingiber officinale)', 'Garlic, big clove (Allium sativum)', 'Cooking oil (groundnut, gingerly, palmolein, mustard, coconut, etc)']",
+      "⚠️ Issue from input: unit in 'glass'",
+      "⚠️ Issue from input: spelling variation"
+    ],
+    "category": "Veg Gravy",
+    "serving_weight_g": 150,
+    "nutrition_per_serving": {
+      "energy_kj": 8915.4,
+      "energy_kcal": 2130.81,
+      "carb_g": 86.13,
+      "protein_g": 47.27,
+      "fat_g": 175.26,
+      "freesugar_g": 40.39,
+      "fibre_g": 25.29
+    }
+  },
+  {
+    "dish": "Mixed veg",
+    "ingredients_extracted": [
+      "Given the broad nature of \"Mixed Veg,\"  a definitive ingredient list is impossible without knowing the specific recipe. However, I can offer a plausible list based on common Indian Mixed Veg preparations.  I will prioritize variety and nutritional balance.  Note that many vegetables are listed with multiple varieties; I'll choose only one representative.",
+      "Potato, brown skin, big (Solanum tuberosum)",
+      "Carrot, orange (Daucus carota)",
+      "Green beans, country (Phaseolus vulgaris)",
+      "Cauliflower (Brassica oleracea var. botrytis)",
+      "Peas, fresh (Pisum sativum)",
+      "Brinjal-1 (Solanum melongena)",
+      "This selection provides a good base of vegetables with different textures and nutritional profiles.  A real Mixed Veg dish might include more, fewer or different vegetables depending on preference and availability."
+    ],
+    "logs": [
+      "Extracted ingredients using Gemini: ['Given the broad nature of \"Mixed Veg,\"  a definitive ingredient list is impossible without knowing the specific recipe. However, I can offer a plausible list based on common Indian Mixed Veg preparations.  I will prioritize variety and nutritional balance.  Note that many vegetables are listed with multiple varieties; I\\'ll choose only one representative.', 'Potato, brown skin, big (Solanum tuberosum)', 'Carrot, orange (Daucus carota)', 'Green beans, country (Phaseolus vulgaris)', 'Cauliflower (Brassica oleracea var. botrytis)', 'Peas, fresh (Pisum sativum)', 'Brinjal-1 (Solanum melongena)', 'This selection provides a good base of vegetables with different textures and nutritional profiles.  A real Mixed Veg dish might include more, fewer or different vegetables depending on preference and availability.']",
+      "⚠️ No nutritional match found for 'Given the broad nature of \"Mixed Veg,\"  a definitive ingredient list is impossible without knowing the specific recipe. However, I can offer a plausible list based on common Indian Mixed Veg preparations.  I will prioritize variety and nutritional balance.  Note that many vegetables are listed with multiple varieties; I'll choose only one representative.' - likely missing in DB or spelling variation.",
+      "⚠️ No nutritional match found for 'This selection provides a good base of vegetables with different textures and nutritional profiles.  A real Mixed Veg dish might include more, fewer or different vegetables depending on preference and availability.' - likely missing in DB or spelling variation.",
+      "⚠️ Issue from input: no fixed recipe",
+      "⚠️ Issue from input: ambiguous serving size"
+    ],
+    "category": "Veg Gravy",
+    "serving_weight_g": 150,
+    "nutrition_per_serving": {
+      "energy_kj": 1624.5,
+      "energy_kcal": 388.26,
+      "carb_g": 60.78,
+      "protein_g": 24.23,
+      "fat_g": 2.88,
+      "freesugar_g": 10.39,
+      "fibre_g": 35.8
+    }
+  }
+]
