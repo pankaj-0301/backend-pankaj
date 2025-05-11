@@ -1,0 +1,7 @@
+[
+  { "dish": "Jeera Aloo (mild fried)", "issues": ["ingredient synonym", "quantity missing"] },
+  { "dish": "Gobhi Sabzi", "issues": ["ambiguous dish type"] },
+  { "dish": "Chana masala", "issues": ["missing ingredient in nutrition DB"] },
+  { "dish": "Paneer Curry with capsicum", "issues": ["unit in 'glass'", "spelling variation"] },
+  { "dish": "Mixed veg", "issues": ["no fixed recipe", "ambiguous serving size"] }
+]

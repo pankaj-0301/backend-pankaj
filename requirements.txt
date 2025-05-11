@@ -1,0 +1,7 @@
+streamlit
+openai
+markdown
+pandas
+numpy
+requests
+gemini-flash
