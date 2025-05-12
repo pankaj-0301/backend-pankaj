@@ -8,3 +8,4 @@ google-generativeai  # (if you're using Gemini Flash via this)
 dotenv
 python-dotenv
 uvicorn==0.18.0  # Or any other version you're using
+fastapi
