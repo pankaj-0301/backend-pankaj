@@ -4,4 +4,4 @@ markdown
 pandas
 numpy
 requests
-gemini-flash
+google-generativeai  # (if you're using Gemini Flash via this)
