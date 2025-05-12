@@ -1,0 +1,9 @@
+streamlit
+openai
+markdown
+pandas
+numpy
+requests
+google-generativeai  # (if you're using Gemini Flash via this)
+dotenv
+python-dotenv
